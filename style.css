@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400&family=Raleway:wght@300&display=swap');
+
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+  .project-card {
+    flex-direction: column;
+  }
+}
+
+body {
+  background: linear-gradient(135deg, #0f172a 5%, #19212e 30%, #30445c 100%);
+  min-height: 100vh;
+  margin: 0;
+  padding-top: 2cm;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+img {
+  width: 280px;
+  height: 350px;
+  border-radius: 20px;
+  object-fit: cover;
+  margin-left: 31cm;
+  margin-top: -6cm;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 68px;
+  margin-left: 2cm;
+  margin-top: 2cm;
+  margin-right: 2cm;
+  background: linear-gradient(135deg, #00D9FF, #00FFFF, #7FFFF0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  word-wrap: break-word;
+}
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  margin-left: 2cm;
+  margin-right: 2cm;
+  margin-bottom: 2cm;
+  color: white;
+  word-wrap: break-word;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 2cm;
+  right: 2cm;
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.6), rgba(30, 41, 59, 0.6));
+  padding: 1cm 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  max-width: calc(100% - 4cm);
+  box-sizing: border-box;
+  border-radius: 0 0 20px 20px;
+}
+
+p {
+  background: hsl(0, 0%, 100%, 0.2);
+  border: 3px solid #00D9FF;
+  border-bottom: 0;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-radius: 30px;
+  padding: 10px 15px;
+  white-space: nowrap;
+  box-shadow: inset 0 0 8px 1px rgba(0, 217, 255, 0.2);
+  transition: all 0.4s ease-in-out;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  color: white;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav a.active p {
+  background: rgba(0, 217, 255, 0.3);
+  
+  color: white;
+  border-color: #00D9FF;
+}
+
+p:hover {
+  font-size: 18px;
+  padding: 12px 20px;
+  
+  background: rgba(0, 217, 255, 0.2);
+  border-color: #00D9FF;
+}
+
+/* Section Styles */
+.section {
+  background-color: #0d1424;
+  margin: 3cm 2cm;
+  padding: 2cm;
+  border-radius: 10px;
+  scroll-margin-top: 50px;
+  max-width: calc(100% - 4cm);
+  box-sizing: border-box;
+  overflow-x: hidden;
+  border: 1px solid transparent;
+}
+
+.section h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 36px;
+  background: linear-gradient(135deg, #00D9FF, #00FFFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-top: 0;
+  margin-bottom: 1.5cm;
+  padding-bottom: 0.5cm;
+}
+
+.section-content {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #e0e0e0;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.section li {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  color: #e0e0e0;
+  margin: 1cm 0;
+  padding-left: 2cm;
+  position: relative;
+}
+
+.section li:before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: #00D9FF;
+}
+
+.section a {
+  color: #00D9FF;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.section a:hover {
+  color: white;
+  background-color: #00D9FF;
+  padding: 2px 5px;
+
+}
+
+/* Contact Links Styles */
+.contact-links {
+  display: flex;
+  gap: 2cm;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3cm;
+  padding: 0.6cm 0.8cm;
+  text-decoration: none;
+  color: #00D9FF;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+}
+
+.contact-item i {
+  font-size: 32px;
+  color: #00D9FF;
+  transition: all 0.3s ease;
+}
+
+.contact-item span {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #e0e0e0;
+}
+
+.contact-item:hover {
+  background-color: #00D9FF;
+  border-radius: 8px;
+  transform: translateY(-5px) scale(1.15);
+  
+  color: white;
+}
+
+.contact-item:hover i {
+  font-size: 32px;
+  color: white;
+  transform: rotate(10deg) scale(1.5);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
+
